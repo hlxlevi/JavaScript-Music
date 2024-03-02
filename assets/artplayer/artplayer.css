@@ -29,7 +29,7 @@ div.art-subtitle {
 }
 
 .art-subtitle-line {
-    border-radius: 10px !important;
+    border-radius: 1vmin !important;
 }
 
 @media screen and (min-width: 900px) {
