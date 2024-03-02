@@ -28,6 +28,10 @@ div.art-subtitle {
     bottom: 7vh !important;
 }
 
+.art-subtitle-line {
+    border-radius: 10px !important;
+}
+
 @media screen and (min-width: 900px) {
     .art-controls {
         margin: 0 20px 0 20px !important;
