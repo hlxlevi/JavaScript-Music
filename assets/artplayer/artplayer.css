@@ -20,10 +20,6 @@ body {
     color: #7dffa0 !important;
 }
 
-.art-control-progress {
-    height: 8px !important;
-}
-
 div.art-subtitle {
     bottom: 7vh !important;
 }
@@ -33,6 +29,10 @@ div.art-subtitle {
 }
 
 @media screen and (min-width: 900px) {
+    .art-control-progress {
+        height: 8px !important;
+    }
+
     .art-controls {
         margin: 0 20px 0 20px !important;
         height: 60px !important;
