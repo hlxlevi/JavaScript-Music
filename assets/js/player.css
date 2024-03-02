@@ -13,7 +13,7 @@ body {
 }
 
 .art-selector-list {
-    margin-bottom: 1.5vh;
+    margin-bottom: 1.5vh !important;
 }
 
 .art-selector-item.art-current {
@@ -22,6 +22,10 @@ body {
 
 .art-control-progress {
     height: 8px !important;
+}
+
+.div.art-subtitle {
+    bottom: 7vh !important;
 }
 
 @media screen and (min-width: 900px) {
