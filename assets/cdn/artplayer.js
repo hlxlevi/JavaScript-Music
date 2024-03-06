@@ -3965,9 +3965,7 @@
             update() {
                 const { $subtitle: t } = this.art.template;
                 t.innerHTML = "",
-                    this.activeCue && (this.art.option.subtitle.escape ? t.innerHTML = this.activeCue.text.split(/\r?\n/).map((t => `<div class="art-subtitle-line">${(0,
-                        o.escape)(t)}</div>`)).join("") : t.innerHTML = this.activeCue.text,
-                        this.art.emit("subtitleUpdate", this.activeCue.text))
+                this.activeCue && (this.art.option.subtitle.escape ? t.innerHTML = this.activeCue.text.split(/\r?\n/).map((t => `<div class="art-subtitle-line">${(0, o.escape), (t)}</div>`)).join("") : t.innerHTML = this.activeCue.text)
             }
             async switch(t, e = {}) {
                 const { i18n: r, notice: a, option: o } = this.art
