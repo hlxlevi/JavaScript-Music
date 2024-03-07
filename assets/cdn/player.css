@@ -21,14 +21,15 @@ body {
 }
 
 div.art-subtitle {
-    bottom: 7vh !important;
+    bottom: 5vh !important;
 }
 
 .art-subtitle-line {
+    padding: 0 2vmin;
     border-radius: 1vmin !important;
 }
 
-@media screen and (min-width: 599px) and (min-height: 499px) {
+@media screen and (min-width: 1366px) and (min-height: 768px) and (orientation: landscape) {
     .art-controls {
         margin: 0 8vh 3.3vh 8vh !important;
         height: 6vh !important;
