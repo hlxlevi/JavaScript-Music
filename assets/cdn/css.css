@@ -34,14 +34,18 @@ div.art-subtitle {
         margin: 0 8vh 3.3vh 8vh !important;
         height: 6vh !important;
     }
-
     .art-progress {
         margin: 0 8.5vh 0 8.5vh !important;
     }
-
     div.art-settings {
         margin-bottom: 6vh !important;
     }
+    .art-control.art-control-control8 {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
     .art-control.art-control-control8 {
         display: none !important;
     }
