@@ -42,4 +42,7 @@ div.art-subtitle {
     div.art-settings {
         margin-bottom: 6vh !important;
     }
+    .art-control.art-control-control8 {
+        display: none !important;
+    }
 }
