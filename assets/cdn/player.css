@@ -43,7 +43,8 @@ div.art-subtitle {
 }
 
 @media screen and (max-width: 550px) {
-    .art-control.art-control-control8 {
+    .art-control.art-control-rewind,
+    .art-control.art-control-forward {
         display: none !important;
     }
 }
