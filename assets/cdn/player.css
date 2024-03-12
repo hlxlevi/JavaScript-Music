@@ -12,6 +12,10 @@ body {
     background-color: #000 !important;
 }
 
+.control-icons {
+    pointer-events: none !important;
+}
+
 .art-selector-list {
     margin-bottom: 1.5vh !important;
 }
