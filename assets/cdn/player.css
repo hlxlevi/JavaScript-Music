@@ -42,7 +42,7 @@ div.art-subtitle {
     }
 }
 
-@media screen and (max-width: 550px) and (orientation: portrait){
+@media screen and (min-width: 550px) and (orientation: portrait){
     .art-control.art-control-rewind,
     .art-control.art-control-forward {
         display: none !important;
