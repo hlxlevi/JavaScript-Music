@@ -33,6 +33,10 @@ div.art-subtitle {
     border-radius: 1vmin !important;
 }
 
+.art-layer-auto-playback {
+    margin-bottom: 10vh !important;
+}
+
 @media screen and (min-width: 1366px) and (min-height: 768px) and (orientation: landscape) {
     .art-controls {
         margin: 0 8vh 3.3vh 8vh !important;
