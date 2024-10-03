@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+[tabIndex] {
+    outline: none;
+    border: none;
+    background-color: unset;
+}
+
+i,
+a[href] {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    width: 430px;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.form .control {
+    display: flex;
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.form .control input {
+    height: 100%;
+    width: 100%;
+    background: #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 20px;
+    border: 1px solid #ced4da;
+    transition: all 0.1s ease;
+}
+
+.form .control input:focus,
+.form .control input:not(:placeholder-shown) {
+    padding: 10px 20px 0;
+    border-color: black;
+}
+
+.form .control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.form .control input:focus~label,
+.form .control input:not(:placeholder-shown)~label {
+    font-size: 1rem;
+    transform: translateY(-130%);
+    color: #8a8a8a86;
+}
+
+.form .control .btn {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.form .control .btn button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form .submit {
+    color: #fff;
+    width: 100%;
+    padding: 13px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    margin: 25px 0 10px;
+    transition: background-color 0.3s;
+}
+
+.form .submit:hover {
+    background-color: #0056b3;
+}
+
+.form p {
+    margin-top: 15px;
+}
+
+.form p a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form small {
+    display: block;
+    margin-top: 15px;
+    color: #6c757d;
+}
+
+.form small a {
+    color: #007bff;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .form.active {
+        background: unset;
+        border-radius: unset;
+    }
+}
