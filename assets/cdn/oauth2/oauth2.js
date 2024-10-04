@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById("signupForm");
     const goToSignUp = document.getElementById("goToSignUp");
     const goToSignIn = document.getElementById("goToSignIn");
-    const client_id = document.body.dataset.clientId;
-    const redirect_uri = document.body.dataset.redirectUri;
+    const code = document.body.dataset.code;
 
     goToSignUp.addEventListener("click", () => {
         signinForm.classList.remove("active");
@@ -74,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password, client_id, redirect_uri }),
+                body: JSON.stringify({ email, password, code }),
             });
 
             if (response.ok) {
@@ -108,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, user_name, password, client_id, redirect_uri }),
+                body: JSON.stringify({ email, user_name, password, code }),
             });
 
             if (response.ok) {
